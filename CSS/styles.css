@@ -1,0 +1,29 @@
+
+body {
+    background-color: #F0ECEE;
+    font-family: "Fira Sans";
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #FF4850;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: #CCC;
+}
