@@ -1,29 +1,62 @@
 
+/*CSS for index.html - Mobile First design (attempt).. Still need more practice with this!!
+Certain design aspects were gave me some issues and I'm still trying to understand why.
+Did my best!! Excited to get much better soon  :) */
+
+/*Set background image, color and font family*/
 body {
     background-color: #F0ECEE;
     font-family: "Fira Sans";
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 960px;
-  margin: auto;
-}
 
+/*Adjust nav menu with flex properties*/
 nav ul {
-  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;  /*Get rid of the dots next to nav link options*/
 }
 
+/*Get ride of the link underlines*/
 nav a {
   text-decoration: none;
 }
 
+/*Set link hover color*/
+nav a:hover {
+  background-color: #CCC;
+}
+
+/*Set button color, padding, radius*/
 .button {
   background-color: #FF4850;
   padding: 10px;
   border-radius: 15px;
 }
 
+/*Set button hover color*/
 .button:hover {
   background-color: #CCC;
+}
+
+/* Use flexbox for menu changes with screen size change*/
+@media screen and (min-width: 768px){
+    body {
+      background-image: url(bulldog.jpg); /*Set background image for bigger screens*/
+      background-color: #F0ECEE;
+    }
+
+  nav ul{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  nav li {
+    justify-content: space-between;
+  }
+
+  .button {
+    width: auto;
+  }
+
 }
