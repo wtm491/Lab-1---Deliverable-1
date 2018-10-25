@@ -1,7 +1,7 @@
 
 /*CSS for index.html - Mobile First design (attempt).. Still need more practice with this!!
 Certain design aspects were giving me issues and I'm still trying to understand why.
-Did my best! Excited to get much better soon  :) - Written in the Atom text editor */   
+Did my best! Excited to get much better soon  :) - Written in the Atom text editor */
 
 /*Set background image, color and font family*/
 body {
@@ -19,6 +19,7 @@ nav ul {
 
 /*Get ride of the link underlines*/
 nav a {
+  color: #88898B;
   text-decoration: none;
 }
 
@@ -53,6 +54,10 @@ nav a:hover {
 
   nav li {
     justify-content: space-between;
+  }
+
+  nav a{
+    color: #88898B; 
   }
 
   .button {
