@@ -48,6 +48,14 @@ button{
   color: #FF4850;
 }
 
+#greyColor{
+  color: #88898B;
+}
+
+#bold{
+  font-weight: 600;
+}
+
 /* Use flexbox for menu changes with screen size change*/
 @media screen and (min-width: 768px){
 
