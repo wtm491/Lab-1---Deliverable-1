@@ -1,6 +1,7 @@
 
+/*MOBILE FIRST DESIGN*/
 
-/*Set background color (for mobile first) and font family*/
+/*Set background color and font family*/
 body {
     background-color: #F0ECEE;
     font-family: "Fira Sans";
@@ -9,7 +10,7 @@ body {
 /*Adjust nav menu with flex properties*/
 nav ul {
   display: flex;
-  /*justify-content: flex-start;*/
+  flex-direction: column;
   list-style-type: none;  /*Get rid of the dots next to nav link options*/
 }
 
@@ -24,13 +25,19 @@ nav a:hover {
   background-color: #FF4850;
 }
 
+button{
+  font-family: "Fira Sans";
+  color: white;
+}
+
 /*Set button color, padding, radius*/
 .button {
   background-color: #FF4850;
   padding: 10px;
   border-radius: 15px;
-  width: 100%
+  width: 100%  /*Change button width for Mobile*/
 }
+
 
 /*Set button hover color*/
 .button:hover {
@@ -54,6 +61,7 @@ nav a:hover {
 
   nav ul{
     display: flex;
+    flex-direction: row;
     justify-content:space-between;
   }
 
@@ -66,7 +74,7 @@ nav a:hover {
   }
 
   .button {
-    width: auto;
+    width: auto; /*Change button width for desktop*/
   }
 
 }
