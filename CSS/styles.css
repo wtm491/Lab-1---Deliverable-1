@@ -1,7 +1,4 @@
 
-/*CSS for index.html - Mobile First design (attempt).. Still need more practice with this!!
-Certain design aspects were giving me issues and I'm still trying to understand why.
-Did my best! Excited to get much better soon  :) - Written in the Atom text editor */
 
 /*Set background color (for mobile first) and font family*/
 body {
@@ -12,7 +9,7 @@ body {
 /*Adjust nav menu with flex properties*/
 nav ul {
   display: flex;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
   list-style-type: none;  /*Get rid of the dots next to nav link options*/
 }
 
@@ -32,11 +29,16 @@ nav a:hover {
   background-color: #FF4850;
   padding: 10px;
   border-radius: 15px;
+  width: 100%
 }
 
 /*Set button hover color*/
 .button:hover {
   background-color: #CCC;
+}
+
+#redColor{
+  color: #FF4850;
 }
 
 /* Use flexbox for menu changes with screen size change*/
@@ -47,6 +49,7 @@ nav a:hover {
       background-image: url(bulldog.jpg);
       background-color: #F0ECEE;
       background-size: cover;
+      background-repeat: no-repeat;
     }
 
   nav ul{
