@@ -12,6 +12,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;  /*Get rid of the dots next to nav link options*/
+  padding: 0px;
 }
 
 /*Get ride of the link underlines and change link color*/
@@ -59,7 +60,7 @@ button{
 /* Use flexbox for menu changes with screen size change*/
 @media screen and (min-width: 768px){
 
-    body {
+  body {
        /*Set background image for bigger screens*/
       background-image: url(bulldog.jpg);
       background-color: #F0ECEE;
@@ -67,10 +68,13 @@ button{
       background-repeat: no-repeat;
     }
 
+
+
   nav ul{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:flex-end;
+    align-items: center;
   }
 
   nav li {
@@ -79,6 +83,20 @@ button{
 
   nav a{
     color: #88898B;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .Header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .container2{
+    padding-top: 115px;
+    padding-left: 40px;
   }
 
   .button {
