@@ -7,8 +7,16 @@ Did my best! Excited to get much better soon  :) - Written in the Atom text edit
 body {
     background-color: #F0ECEE;
     font-family: "Fira Sans";
+    background-image: url(bulldog.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
+#background{
+  background-image: url(bulldog.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
 
 /*Adjust nav menu with flex properties*/
 nav ul {
@@ -42,8 +50,11 @@ nav a:hover {
 
 /* Use flexbox for menu changes with screen size change*/
 @media screen and (min-width: 768px){
+  html{
+    background-image: url(bulldog.jpg);
+  }
     body {
-      background-image: url(bulldog.jpg); /*Set background image for bigger screens*/
+       /*Set background image for bigger screens*/
       background-color: #F0ECEE;
     }
 
