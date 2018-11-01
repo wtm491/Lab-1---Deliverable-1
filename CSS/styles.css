@@ -10,9 +10,9 @@ body {
 /*Adjust nav menu with flex properties*/
 nav ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  /*Stack the layout on MOBILE*/
   list-style-type: none;  /*Get rid of the dots next to nav link options*/
-  padding: 0px;
+  padding: 0px; /* Get rid of padding to push nav links over*/
 }
 
 /*Get ride of the link underlines and change link color*/
@@ -26,6 +26,7 @@ nav a:hover {
   background-color: #FF4850;
 }
 
+/*Adjust button text color and font*/
 button{
   font-family: "Fira Sans";
   color: white;
@@ -45,6 +46,7 @@ button{
   background-color: #CCC;
 }
 
+/*Change color for emphasis words*/
 #redColor{
   color: #FF4850;
 }
@@ -57,7 +59,8 @@ button{
   font-weight: 600;
 }
 
-/* Use flexbox for menu changes with screen size change*/
+
+/* Media Query to adjust design for bigger screen - DESKTOP LAST */
 @media screen and (min-width: 768px){
 
   body {
@@ -68,14 +71,14 @@ button{
       background-repeat: no-repeat;
     }
 
-
-
+/*Adjust nav layout on Desktop*/
   nav ul{
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
     align-items: center;
   }
+
 
   nav li {
     justify-content: space-between;
@@ -99,8 +102,9 @@ button{
     padding-left: 40px;
   }
 
+   /*Change button width for desktop*/
   .button {
-    width: auto; /*Change button width for desktop*/
+    width: auto;
   }
 
 }
